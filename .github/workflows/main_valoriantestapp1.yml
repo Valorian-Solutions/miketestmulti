@@ -8,6 +8,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'app1/**'  # Only trigger on changes in this directory
   workflow_dispatch:
 
 env:
